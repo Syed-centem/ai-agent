@@ -3,36 +3,76 @@
 📌 Project Overview
 
 Submitted for: Rooman AI Agent Development Challenge
-
 Category: Business Operations (Knowledge Base Agent)
 
-This Knowledge Base Agent serves as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional search tools, it uses Retrieval Augmented Generation (RAG) powered by Google's Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
+The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
 
-It features a "Smart Model Switcher" that automatically routes queries to the best available Google model (Flash, Pro, or 2.0) to ensure 100% uptime and zero 404 errors.
+This project features a unique "Smart Model Switcher" engine that automatically routes queries to the optimal Google model (Flash, Pro, or Legacy) to ensure 100% uptime and zero 404 errors, wrapped in a stunning Cyberpunk/Sci-Fi interface.
+
+📸 Project Visuals
+
+1. The Neural Interface (Dashboard)
+
+A futuristic HUD for document ingestion and real-time telemetry.
+
+(Note: Replace dashboard_view.png with your actual screenshot)
+
+2. Intelligent Reasoning (Chat)
+
+The agent answering complex queries with structural diagrams.
+
+(Note: Replace chat_view.png with your actual screenshot)
 
 🚀 Key Features
 
-🧠 Smart Brain Engine: Automatically detects and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models if one fails or is region-locked.
+🧠 Smart Brain Engine
 
-🎨 Cyberpunk HUD Interface: A fully immersive, ultra-futuristic UI with animated backgrounds, glassmorphism panels, and simulated neural processing visuals.
+Auto-Failover: Automatically detects API errors (404/429) and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models instantly.
 
-🖼️ Auto-Diagramming: Intelligently detects requests for structural explanations and generates Graphviz/DOT diagrams instantly.
+Context-Aware: Injects full document context into the system prompt for high-fidelity answers.
 
-📊 Live Telemetry: Real-time dashboard showing page count, character volume, and simulated latency metrics.
+🎨 Cyberpunk HUD Interface
 
-🛡️ Enterprise Security: API Keys and Documents are processed in ephemeral session memory and never stored permanently.
+Immersive Design: Features animated particle backgrounds, glassmorphism panels, and neon typography.
+
+Interactive Feedback: Visual and simulated auditory cues (toast notifications) for system status.
+
+🖼️ Auto-Diagramming
+
+Visual Thinking: Intelligently detects requests for "structures", "flows", or "processes" and automatically generates Graphviz/DOT diagrams to visualize the data.
+
+📊 Live Telemetry
+
+Real-Time Stats: A sidebar dashboard showing page counts, character volume, and simulated network latency.
+
+🛡️ Enterprise Security
+
+Ephemeral Processing: API Keys and Document data are processed in-memory and cleared upon session reset. Zero permanent storage.
 
 🛠️ Tech Stack
 
-Frontend: Streamlit (Python) with Custom CSS/JS Injection.
+| Component | Technology | Description |
+| Frontend | Streamlit | Python-based web framework with custom CSS/JS injection. |
+| AI Core | Google Gemini API | v1beta access to Flash and Pro models. |
+| Logic | Python | Custom GeminiBrain class with error handling logic. |
+| Data Processing | pypdf | High-speed text extraction for vectorization readiness. |
+| Visualization | Graphviz | Dynamic diagram generation from text descriptions. |
 
-AI Core: Google Gemini API (v1beta).
+🏗️ Architecture
 
-Data Processing: pypdf for vectorization-ready text extraction.
+Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
 
-Visualization: Graphviz for structural data rendering.
+Context Injection: The extracted text is optimized and injected into the System Prompt of the GeminiAgent.
+
+Smart Routing Layer: The GeminiBrain attempts connection with the priority model (Flash). If a 404 or connection error occurs, it seamlessly fails over to Pro or Legacy models in real-time.
+
+Generation Layer: The active Gemini model generates a markdown response. It decides whether to output text or graphviz code based on the query.
+
+Rendering Layer: The Frontend renders the markdown text and compiles any DOT code into visible diagrams instantly.
 
 ⚙️ Setup & Run Instructions
+
+Follow these steps to deploy the agent locally:
 
 Clone the Repository:
 
@@ -42,41 +82,40 @@ cd [YOUR_REPO_NAME]
 
 
 Install Dependencies:
+Ensure you have Python installed, then run:
 
 pip install -r requirements.txt
 
 
 
-Run the Agent:
+Run the Application:
 
 streamlit run app.py
 
 
 
-Initialize:
+Initialize the System:
 
-Enter your Google Gemini API Key in the secure sidebar.
+Open the link provided in the terminal (usually http://localhost:8501).
+
+Enter your Google Gemini API Key in the secure sidebar HUD.
 
 Upload a PDF document.
 
-Click "INITIATE NEURAL LINK".
+Click the "INITIATE NEURAL LINK" button.
 
-🏗️ Architecture
+🔮 Future Roadmap
 
-Ingestion: User uploads PDF -> System extracts text via pypdf.
+$$$$
 
-Context Windowing: Text is optimized and injected into the System Prompt.
+ Voice Integration: Adding Speech-to-Text (STT) for hands-free queries.
 
-Smart Routing: The GeminiBrain attempts connection with the fastest model (Flash). If a 404/Error occurs, it seamlessly fails over to Pro or Legacy models.
+$$$$
 
-Generation: The AI generates a markdown response (text or Graphviz code).
+ Multi-Modal Analysis: Ability to read charts and images inside PDFs.
 
-Rendering: The Frontend renders the text and compiles any diagrams into images.
+$$$$
 
-🔮 Future Improvements
+ Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
 
-Voice Mode: Adding Speech-to-Text for voice commands.
-
-Multi-Doc Support: Analyzing multiple PDFs simultaneously.
-
-Persistent Vector DB: Integrating ChromaDB for datasets larger than 2M tokens.
+Built with ❤️ for the Rooman AI Challenge.
