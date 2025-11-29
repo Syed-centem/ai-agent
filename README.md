@@ -60,7 +60,7 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 | Visualization | Graphviz | Dynamic diagram generation from text descriptions. |
 
 🏗️ Architecture
-![Uploading architecture_diagram.png…]()
+architecture_diagram.png
 
 
 Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
