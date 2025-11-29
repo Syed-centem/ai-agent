@@ -15,13 +15,14 @@ This project features a unique "Smart Model Switcher" engine that automatically 
 
 A futuristic HUD for document ingestion and real-time telemetry.
 
-(Note: Replace dashboard_view.png with your actual screenshot)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb6d4cde-098a-448e-b51f-e70ed88a10f8" />
+
 
 2. Intelligent Reasoning (Chat)
 
 The agent answering complex queries with structural diagrams.
+<img width="1920" height="1080" alt="chat_view" src="https://github.com/user-attachments/assets/41fdeb1b-9aa5-468a-b47d-7c8cfaf8243e" />
 
-(Note: Replace chat_view.png with your actual screenshot)
 
 🚀 Key Features
 
@@ -59,6 +60,8 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 | Visualization | Graphviz | Dynamic diagram generation from text descriptions. |
 
 🏗️ Architecture
+![Uploading architecture_diagram.png…]()
+
 
 Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
 
