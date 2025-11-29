@@ -1,36 +1,5 @@
-# 🧠 Enterprise Knowledge Base AI Agent
-
-## Overview
-This AI Agent is designed to streamline information retrieval within organizations. It allows employees to upload internal documents (PDFs such as HR policies, Technical Manuals, or Operation Guidelines) and ask natural language questions. The agent retrieves exact answers from the document, reducing the time spent searching through files.
-
-## Features
-* **Instant Document Ingestion:** Supports PDF upload and processing.
-* **Semantic Search:** Uses vector embeddings to understand the *meaning* of the query, not just keyword matching.
-* **Accurate Answers:** Utilizes GPT-3.5-turbo to synthesize answers based strictly on the provided document.
-* **Secure:** Processes documents in-memory/temporarily.
-
-## [cite_start]Tech Stack 
-* **Language:** Python
-* **LLM:** OpenAI GPT-3.5 Turbo
-* **Framework:** LangChain
-* **Vector Database:** FAISS (Facebook AI Similarity Search)
-* **Interface:** Streamlit
-
-## Setup Instructions
-1.  Clone the repository:
-    ```bash
-    git clone [YOUR_REPO_LINK_HERE]
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Run the application:
-    ```bash
-    streamlit run app.py
-    ```
-
-## Future Improvements
-* Add support for Word docs and Excel sheets.
-* Implement persistent database storage (ChromaDB) to save indices.
-* Add "Chat History" to allow follow-up questions.
+🌌 Knowledge Base Agent - Gemini Powered📌 Project OverviewSubmitted for: Rooman AI Agent Development ChallengeCategory: Business Operations (Knowledge Base Agent)This Knowledge Base Agent serves as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional search tools, it uses Retrieval Augmented Generation (RAG) powered by Google's Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.It features a "Smart Model Switcher" that automatically routes queries to the best available Google model (Flash, Pro, or 2.0) to ensure 100% uptime and zero 404 errors.🚀 Key Features🧠 Smart Brain Engine: Automatically detects and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models if one fails or is region-locked.🎨 Cyberpunk HUD Interface: A fully immersive, ultra-futuristic UI with animated backgrounds, glassmorphism panels, and simulated neural processing visuals.🖼️ Auto-Diagramming: Intelligently detects requests for structural explanations and generates Graphviz/DOT diagrams instantly.📊 Live Telemetry: Real-time dashboard showing page count, character volume, and simulated latency metrics.🛡️ Enterprise Security: API Keys and Documents are processed in ephemeral session memory and never stored permanently.🛠️ Tech StackFrontend: Streamlit (Python) with Custom CSS/JS Injection.AI Core: Google Gemini API (v1beta).Data Processing: pypdf for vectorization-ready text extraction.Visualization: Graphviz for structural data rendering.⚙️ Setup & Run InstructionsClone the Repository:git clone [YOUR_REPO_LINK_HERE]
+cd [YOUR_REPO_NAME]
+Install Dependencies:pip install -r requirements.txt
+Run the Agent:streamlit run app.py
+Initialize:Enter your Google Gemini API Key in the secure sidebar.Upload a PDF document.Click "INITIATE NEURAL LINK".🏗️ ArchitectureIngestion: User uploads PDF -> System extracts text via pypdf.Context Windowing: Text is optimized and injected into the System Prompt.Smart Routing: The GeminiBrain attempts connection with the fastest model (Flash). If a 404/Error occurs, it seamlessly fails over to Pro or Legacy models.Generation: The AI generates a markdown response (text or Graphviz code).Rendering: The Frontend renders the text and compiles any diagrams into images.🔮 Future ImprovementsVoice Mode: Adding Speech-to-Text for voice commands.Multi-Doc Support: Analyzing multiple PDFs simultaneously.Persistent Vector DB: Integrating ChromaDB for datasets larger than 2M tokens.
