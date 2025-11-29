@@ -12,7 +12,7 @@ This project features a unique "Smart Model Switcher" engine that automatically 
 📸 Project Visuals
 
 1. The Neural Interface (Dashboard)
-   assets/dashboard_view.png
+   https://github.com/Syed-centem/ai-agent/blob/ac1e3cf2cbd88af05f9fcd8b33393240dc3b1491/assets/dashboard_view.png
 
 A futuristic HUD for document ingestion and real-time telemetry.
 
