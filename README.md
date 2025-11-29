@@ -12,11 +12,12 @@ This project features a unique "Smart Model Switcher" engine that automatically 
 📸 Project Visuals
 
 1. The Neural Interface (Dashboard)
-   https://github.com/Syed-centem/ai-agent/blob/ac1e3cf2cbd88af05f9fcd8b33393240dc3b1491/assets/dashboard_view.png
+   ![Dashboard Interface](assets/dashboard_view.png)
 
 A futuristic HUD for document ingestion and real-time telemetry.
 
 2. Intelligent Reasoning (Chat)
+   ![Chat Interface](assets/chat_view.png)
 
 The agent answering complex queries with structural diagrams.
 
@@ -50,9 +51,7 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 
 Component
 
-Technology
-
-Description
+Technology     Description
 
 Frontend
 
@@ -85,6 +84,7 @@ Graphviz
 Dynamic diagram generation from text descriptions.
 
 🏗️ Architecture
+![System Architecture](assets/architecture_diagram.png)
 
 Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
 
