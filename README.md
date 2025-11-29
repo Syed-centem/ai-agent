@@ -12,6 +12,7 @@ This project features a unique "Smart Model Switcher" engine that automatically 
 📸 Project Visuals
 
 1. The Neural Interface (Dashboard)
+   assets/dashboard_view.png
 
 A futuristic HUD for document ingestion and real-time telemetry.
 
