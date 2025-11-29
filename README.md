@@ -15,14 +15,9 @@ This project features a unique "Smart Model Switcher" engine that automatically 
 
 A futuristic HUD for document ingestion and real-time telemetry.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb6d4cde-098a-448e-b51f-e70ed88a10f8" />
-
-
 2. Intelligent Reasoning (Chat)
 
 The agent answering complex queries with structural diagrams.
-<img width="1920" height="1080" alt="chat_view" src="https://github.com/user-attachments/assets/41fdeb1b-9aa5-468a-b47d-7c8cfaf8243e" />
-
 
 🚀 Key Features
 
@@ -52,16 +47,43 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 
 🛠️ Tech Stack
 
-| Component | Technology | Description |
-| Frontend | Streamlit | Python-based web framework with custom CSS/JS injection. |
-| AI Core | Google Gemini API | v1beta access to Flash and Pro models. |
-| Logic | Python | Custom GeminiBrain class with error handling logic. |
-| Data Processing | pypdf | High-speed text extraction for vectorization readiness. |
-| Visualization | Graphviz | Dynamic diagram generation from text descriptions. |
+Component
+
+Technology
+
+Description
+
+Frontend
+
+Streamlit
+
+Python-based web framework with custom CSS/JS injection.
+
+AI Core
+
+Google Gemini API
+
+v1beta access to Flash and Pro models.
+
+Logic
+
+Python
+
+Custom GeminiBrain class with error handling logic.
+
+Data Processing
+
+pypdf
+
+High-speed text extraction for vectorization readiness.
+
+Visualization
+
+Graphviz
+
+Dynamic diagram generation from text descriptions.
 
 🏗️ Architecture
-architecture_diagram.png
-
 
 Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
 
@@ -83,18 +105,15 @@ git clone [YOUR_REPO_LINK_HERE]
 cd [YOUR_REPO_NAME]
 
 
-
 Install Dependencies:
 Ensure you have Python installed, then run:
 
 pip install -r requirements.txt
 
 
-
 Run the Application:
 
 streamlit run app.py
-
 
 
 Initialize the System:
@@ -109,16 +128,10 @@ Click the "INITIATE NEURAL LINK" button.
 
 🔮 Future Roadmap
 
-$$$$
+[ ] Voice Integration: Adding Speech-to-Text (STT) for hands-free queries.
 
- Voice Integration: Adding Speech-to-Text (STT) for hands-free queries.
+[ ] Multi-Modal Analysis: Ability to read charts and images inside PDFs.
 
-$$$$
-
- Multi-Modal Analysis: Ability to read charts and images inside PDFs.
-
-$$$$
-
- Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
+[ ] Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
 
 Built with ❤️ for the Rooman AI Challenge.
