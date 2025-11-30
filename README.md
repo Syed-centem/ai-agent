@@ -1,4 +1,5 @@
-# **🌌 KNOWLEDGE BASE AGENT**
+               # **🌌 KNOWLEDGE BASE AGENT**
+
 
 ## **📌 Project Overview**
 
@@ -7,44 +8,49 @@
 - The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
 
 - This project features a unique "Smart Model Switcher" engine that automatically routes queries to the optimal Google model (Flash, Pro, or Legacy) to ensure 100% uptime and zero 404 errors, wrapped in a stunning Cyberpunk/Sci-Fi interface.
+- 
 
 ## **📸 Project Visuals**
 
-1. The Neural Interface (Dashboard)
+**1. The Neural Interface (Dashboard)**
+
    ![Dashboard Interface](assets/dashboard_view.png)
 
 - A futuristic HUD for document ingestion and real-time telemetry.
 
-2. Intelligent Reasoning (Chat)
+**2. Intelligent Reasoning (Chat)**
+
    ![Chat Interface](assets/chat_view.png)
 
 - The agent answering complex queries with structural diagrams.
+  
 
 ## **🚀 Key Features**
 
-**🧠 Smart Brain Engine**
+1) **🧠 Smart Brain Engine**
 
 - Auto-Failover: Automatically detects API errors (404/429) and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models instantly.
 
 - Context-Aware: Injects full document context into the system prompt for high-fidelity answers.
 
-**🎨 Cyberpunk HUD Interface**
+2) **🎨 Cyberpunk HUD Interface**
 
 - Immersive Design: Features animated particle backgrounds, glassmorphism panels, and neon typography.
 
 - Interactive Feedback: Visual and simulated auditory cues (toast notifications) for system status.
 
-**🖼️ Auto-Diagramming**
+3) **🖼️ Auto-Diagramming**
 
 - Visual Thinking: Intelligently detects requests for "structures", "flows", or "processes" and automatically generates Graphviz/DOT diagrams to visualize the data.
 
-**📊 Live Telemetry**
+4) **📊 Live Telemetry**
 
 - Real-Time Stats: A sidebar dashboard showing page counts, character volume, and simulated network latency.
 
-**🛡️ Enterprise Security**
+5) **🛡️ Enterprise Security**
 
 - Ephemeral Processing: API Keys and Document data are processed in-memory and cleared upon session reset. Zero permanent storage.
+  
 
 ## **🛠️ Tech Stack**
 
@@ -58,7 +64,9 @@
 | **Memory Layer**   | In-Memory                              | Zero data retention for security            |
 
 
+
 ## **🏗️ Architecture**
+
 ![System Architecture](assets/architecture_diagram.png)
 
 **1) Ingestion Layer:** User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
@@ -70,6 +78,7 @@
 **4) Generation Layer:** The active Gemini model generates a markdown response. It decides whether to output text or graphviz code based on the query.
 
 **5) Rendering Layer:** The Frontend renders the markdown text and compiles any DOT code into visible diagrams instantly.
+
 
 ## **⚙️ Setup & Run Instructions**
 
@@ -102,6 +111,7 @@
  -> Upload a PDF document.
 
  -> Click the "INITIATE NEURAL LINK" button.
+ 
 
 ## **🔮 Future Roadmap**
 
