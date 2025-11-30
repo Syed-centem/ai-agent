@@ -1,52 +1,52 @@
-#**🌌 KNOWLEDGE BASE AGENT**
+# **🌌 KNOWLEDGE BASE AGENT**
 
-##**📌 Project Overview**
+## **📌 Project Overview**
 
 **Category**: Business Operations (Knowledge Base Agent)
 
--The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
+- The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
 
--This project features a unique "Smart Model Switcher" engine that automatically routes queries to the optimal Google model (Flash, Pro, or Legacy) to ensure 100% uptime and zero 404 errors, wrapped in a stunning Cyberpunk/Sci-Fi interface.
+- This project features a unique "Smart Model Switcher" engine that automatically routes queries to the optimal Google model (Flash, Pro, or Legacy) to ensure 100% uptime and zero 404 errors, wrapped in a stunning Cyberpunk/Sci-Fi interface.
 
-##**📸 Project Visuals**
+## **📸 Project Visuals**
 
 1. The Neural Interface (Dashboard)
    ![Dashboard Interface](assets/dashboard_view.png)
 
--A futuristic HUD for document ingestion and real-time telemetry.
+- A futuristic HUD for document ingestion and real-time telemetry.
 
 2. Intelligent Reasoning (Chat)
    ![Chat Interface](assets/chat_view.png)
 
--The agent answering complex queries with structural diagrams.
+- The agent answering complex queries with structural diagrams.
 
-##**🚀 Key Features**
+## **🚀 Key Features**
 
 **🧠 Smart Brain Engine**
 
--Auto-Failover: Automatically detects API errors (404/429) and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models instantly.
+- Auto-Failover: Automatically detects API errors (404/429) and switches between gemini-1.5-flash, gemini-1.5-pro, and gemini-2.0 models instantly.
 
--Context-Aware: Injects full document context into the system prompt for high-fidelity answers.
+- Context-Aware: Injects full document context into the system prompt for high-fidelity answers.
 
 **🎨 Cyberpunk HUD Interface**
 
--Immersive Design: Features animated particle backgrounds, glassmorphism panels, and neon typography.
+- Immersive Design: Features animated particle backgrounds, glassmorphism panels, and neon typography.
 
--Interactive Feedback: Visual and simulated auditory cues (toast notifications) for system status.
+- Interactive Feedback: Visual and simulated auditory cues (toast notifications) for system status.
 
 **🖼️ Auto-Diagramming**
 
--Visual Thinking: Intelligently detects requests for "structures", "flows", or "processes" and automatically generates Graphviz/DOT diagrams to visualize the data.
+- Visual Thinking: Intelligently detects requests for "structures", "flows", or "processes" and automatically generates Graphviz/DOT diagrams to visualize the data.
 
 **📊 Live Telemetry**
 
--Real-Time Stats: A sidebar dashboard showing page counts, character volume, and simulated network latency.
+- Real-Time Stats: A sidebar dashboard showing page counts, character volume, and simulated network latency.
 
 **🛡️ Enterprise Security**
 
--Ephemeral Processing: API Keys and Document data are processed in-memory and cleared upon session reset. Zero permanent storage.
+- Ephemeral Processing: API Keys and Document data are processed in-memory and cleared upon session reset. Zero permanent storage.
 
-##**🛠️ Tech Stack**
+## **🛠️ Tech Stack**
 
 | Component          | Technology                             | Description                                 |
 | ------------------ | -------------------------------------- | ------------------------------------------- |
@@ -58,7 +58,7 @@
 | **Memory Layer**   | In-Memory                              | Zero data retention for security            |
 
 
-##**🏗️ Architecture**
+## **🏗️ Architecture**
 ![System Architecture](assets/architecture_diagram.png)
 
 **1) Ingestion Layer:** User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
@@ -71,39 +71,39 @@
 
 **5) Rendering Layer:** The Frontend renders the markdown text and compiles any DOT code into visible diagrams instantly.
 
-##**⚙️ Setup & Run Instructions**
+## **⚙️ Setup & Run Instructions**
 
--Follow these steps to deploy the agent locally:
+   - Follow these steps to deploy the agent locally:
 
 **1) Clone the Repository:**
 
-git clone https://github.com/Syed-centem/ai-agent.git
+     git clone https://github.com/Syed-centem/ai-agent.git
 
-cd ai-agent
+     cd ai-agent
 
 
 **2) Install Dependencies:**
--Ensure you have Python installed, then run:
+  - Ensure you have Python installed, then run:
 
-pip install -r requirements.txt
+     pip install -r requirements.txt
 
 
 **3) Run the Application:**
 
-streamlit run app.py
+     streamlit run app.py
 
 
 **4) Initialize the System:**
 
--Open the link provided in the terminal (usually http://localhost:8501).
+ -> Open the link provided in the terminal (usually http://localhost:8501).
 
--Enter your Google Gemini API Key in the secure sidebar HUD.
+ -> Enter your Google Gemini API Key in the secure sidebar HUD.
 
--Upload a PDF document.
+ -> Upload a PDF document.
 
--Click the "INITIATE NEURAL LINK" button.
+ -> Click the "INITIATE NEURAL LINK" button.
 
-##**🔮 Future Roadmap**
+## **🔮 Future Roadmap**
 
 [ ] **Voice Integration:** Adding Speech-to-Text (STT) for hands-free queries.
 
