@@ -77,8 +77,8 @@ Follow these steps to deploy the agent locally:
 
 Clone the Repository:
 
-git clone [YOUR_REPO_LINK_HERE]
-cd [YOUR_REPO_NAME]
+git clone https://github.com/Syed-centem/ai-agent.git
+cd ai-agent
 
 
 Install Dependencies:
