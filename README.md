@@ -91,8 +91,7 @@
      cd ai-agent
 
 
-**2) Install Dependencies:**
-  - Ensure you have Python installed, then run:
+**2) Install Dependencies:** Ensure you have Python installed, then run:
 
      pip install -r requirements.txt
 
