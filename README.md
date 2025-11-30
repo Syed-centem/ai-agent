@@ -1,9 +1,9 @@
-               # **🌌 KNOWLEDGE BASE AGENT**
+# **🌌 KNOWLEDGE BASE AGENT**
 
 
 ## **📌 Project Overview**
 
-**Category**: Business Operations (Knowledge Base Agent)
+  **Category**: Business Operations (Knowledge Base Agent)
 
 - The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
 
