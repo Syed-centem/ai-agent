@@ -48,17 +48,15 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 
 🛠️ Tech Stack
 
-Component      |   Technology          | Description
+| Component          | Technology                             | Description                                 |
+| ------------------ | -------------------------------------- | ------------------------------------------- |
+| **Frontend**       | Streamlit                              | Custom Cyberpunk UI with CSS overrides      |
+| **AI Core**        | Google Gemini API (Flash, Pro, Legacy) | RAG-style reasoning & diagram generation    |
+| **Backend Logic**  | Python                                 | Smart model routing, error handling         |
+| **PDF Processing** | `pypdf`                                | Fast text extraction                        |
+| **Visualization**  | Graphviz                               | Auto-rendering workflows & process diagrams |
+| **Memory Layer**   | In-Memory                              | Zero data retention for security            |
 
-Frontend       |   Streamlit           | Python-based web framework with custom CSS/JS injection.
-
-AI Core        |   Google Gemini API   | v1beta access to Flash and Pro models.
-
-Logic          |   Python              | Custom GeminiBrain class with error handling logic.
-
-Data Processing|   pypdf               | High-speed text extraction for vectorization readiness.
-
-Visualization  |   Graphviz            | Dynamic diagram generation from text descriptions.
 
 🏗️ Architecture
 ![System Architecture](assets/architecture_diagram.png)
