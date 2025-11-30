@@ -1,8 +1,7 @@
-🌌 Knowledge Base Agent - Gemini Powered
+🌌 Knowledge Base Agent
 
 📌 Project Overview
 
-Submitted for: Rooman AI Agent Development Challenge
 Category: Business Operations (Knowledge Base Agent)
 
 The Knowledge Base Agent (codenamed Gemini Neural Hub) is a next-generation AI assistant designed to act as a secure, intelligent "Second Brain" for enterprise data. Unlike traditional keyword search tools, it utilizes Retrieval Augmented Generation (RAG) powered by Google's advanced Gemini 1.5/2.5 models to read, understand, and reason across entire PDF documents instantly.
@@ -49,39 +48,17 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 
 🛠️ Tech Stack
 
-Component
+Component          Technology            Description
 
-Technology     Description
+Frontend           Streamlit             Python-based web framework with custom CSS/JS injection.
 
-Frontend
+AI Core            Google Gemini API     v1beta access to Flash and Pro models.
 
-Streamlit
+Logic              Python                Custom GeminiBrain class with error handling logic.
 
-Python-based web framework with custom CSS/JS injection.
+Data Processing    pypdf                 High-speed text extraction for vectorization readiness.
 
-AI Core
-
-Google Gemini API
-
-v1beta access to Flash and Pro models.
-
-Logic
-
-Python
-
-Custom GeminiBrain class with error handling logic.
-
-Data Processing
-
-pypdf
-
-High-speed text extraction for vectorization readiness.
-
-Visualization
-
-Graphviz
-
-Dynamic diagram generation from text descriptions.
+Visualization      Graphviz              Dynamic diagram generation from text descriptions.
 
 🏗️ Architecture
 ![System Architecture](assets/architecture_diagram.png)
@@ -135,4 +112,3 @@ Click the "INITIATE NEURAL LINK" button.
 
 [ ] Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
 
-Built with ❤️ for the Rooman AI Challenge.
