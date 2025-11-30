@@ -61,52 +61,52 @@ Ephemeral Processing: API Keys and Document data are processed in-memory and cle
 🏗️ Architecture
 ![System Architecture](assets/architecture_diagram.png)
 
-Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
+1) Ingestion Layer: User uploads a PDF. The Streamlit app uses pypdf to extract raw text and metadata.
 
-Context Injection: The extracted text is optimized and injected into the System Prompt of the GeminiAgent.
+2) Context Injection: The extracted text is optimized and injected into the System Prompt of the GeminiAgent.
 
-Smart Routing Layer: The GeminiBrain attempts connection with the priority model (Flash). If a 404 or connection error occurs, it seamlessly fails over to Pro or Legacy models in real-time.
+3) Smart Routing Layer: The GeminiBrain attempts connection with the priority model (Flash). If a 404 or connection error occurs, it seamlessly fails over to Pro or Legacy models in real-time.
 
-Generation Layer: The active Gemini model generates a markdown response. It decides whether to output text or graphviz code based on the query.
+4) Generation Layer: The active Gemini model generates a markdown response. It decides whether to output text or graphviz code based on the query.
 
-Rendering Layer: The Frontend renders the markdown text and compiles any DOT code into visible diagrams instantly.
+5) Rendering Layer: The Frontend renders the markdown text and compiles any DOT code into visible diagrams instantly.
 
 ⚙️ Setup & Run Instructions
 
 Follow these steps to deploy the agent locally:
 
-Clone the Repository:
+1) Clone the Repository:
 
 git clone https://github.com/Syed-centem/ai-agent.git
 cd ai-agent
 
 
-Install Dependencies:
+2) Install Dependencies:
 Ensure you have Python installed, then run:
 
 pip install -r requirements.txt
 
 
-Run the Application:
+3) Run the Application:
 
 streamlit run app.py
 
 
-Initialize the System:
+4) Initialize the System:
 
-Open the link provided in the terminal (usually http://localhost:8501).
+-> Open the link provided in the terminal (usually http://localhost:8501).
 
-Enter your Google Gemini API Key in the secure sidebar HUD.
+-> Enter your Google Gemini API Key in the secure sidebar HUD.
 
-Upload a PDF document.
+-> Upload a PDF document.
 
-Click the "INITIATE NEURAL LINK" button.
+-> Click the "INITIATE NEURAL LINK" button.
 
 🔮 Future Roadmap
 
-[ ] Voice Integration: Adding Speech-to-Text (STT) for hands-free queries.
+[] Voice Integration: Adding Speech-to-Text (STT) for hands-free queries.
 
-[ ] Multi-Modal Analysis: Ability to read charts and images inside PDFs.
+[] Multi-Modal Analysis: Ability to read charts and images inside PDFs.
 
-[ ] Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
+[] Persistent Memory: Integration with ChromaDB for storing chat history across sessions.
 
